@@ -23,7 +23,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+            <div class="logo"><a href="#">Ragul Adhithya <span>M</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Ragul Adhithya and I'm a <span class="typing-2"></span></div>
-                    <p>Hi, I am Ragul Adhithya M living in Coimbatore. I have done with my schooling at Vidhya Niketan Matric School in Coimbatore. Presently I am pursuing my UG degree at KUMARAGURU COLLEGE OF TECHNOLOGY. I love programming and development. Currently studying Cyber Security, Javascript, Bootstrap, My ambition is to become a Software Engineer and to get placed in a reputed software company</p>
+                    <p>Aspiring Full Stack Dev & Competitive Coder from Coimbatore. Constantly looking for ways to grow and hone my skills in the tech space. #CodingIsLife 💻</p>
                     <a href="images/cv.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
@@ -241,20 +241,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form id="registrationform">
+                    <form action="https://formspree.io/f/xvonzrwb" method="POST" id="contactForm">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" placeholder="Name" required>
+                                <input type="text" id="name" name="Name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" id="emailid" placeholder="Email" required>
+                                <input type="email" id="emailid" name="Email ID" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" id="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="Subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <input cols="30" rows="10" id="message" placeholder="Message.." required>
+                            <input cols="30" rows="10" id="message" name="Message" placeholder="Message.." required>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -263,13 +263,20 @@
                 </div>
             </div>
         </div>
-        <div class="alert">Message Sent Successfully</div>
     </section>
+    <script>
+        function resetForm(){
+          document.getElementById("contactForm").reset();
+        }
+
+        window.onload = resetForm;
+        </script>
     
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="https://www.instagram.com/ragul_2003">Ragul Adhithya</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
+    <script src="from.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
